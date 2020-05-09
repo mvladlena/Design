@@ -10,15 +10,15 @@ const sass = require('gulp-sass');
         }
     });
     
-    watch("/*.html").on('change', browserSync.reload);
-    watch("/sass/**/*.html", serveSass);
-    watch("/js/*.js").on('change', browserSync.reload);  
+    watch("./*.html").on('change', browserSync.reload);
+    watch("./sass/**/*.sass", serveSass);
+    watch("./js/*.js").on('change', browserSync.reload);  
 
 };
 
 
 function serveSass() {
-    return src("/sass/*.sass")
+    return src("./sass/*.sass")
         .pipe(sass())
         .pipe(dest("./css"))
         .pipe(browserSync.stream());
