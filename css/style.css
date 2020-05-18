@@ -444,7 +444,7 @@ img {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 3.2rem; }
 
 .hero {
   position: relative;
@@ -676,6 +676,10 @@ img {
     min-width: 22.8rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-height: 520px) {
-  __scroll-down {
+@media screen and (max-height: 570px) {
+  .hero__scroll-down {
     display: none; } }
+
+@media screen and (min-width: 1200px) {
+  .nav__item {
+    margin-right: 1rem; } }
