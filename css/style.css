@@ -393,7 +393,7 @@ template {
   flex-basis: 30%; }
 
 .col-50 {
-  flex-basis: 50%; }
+  width: 50%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -626,6 +626,12 @@ img {
 .types__section-title {
   margin-bottom: 2rem; }
 
+.section-title__types-text--design {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.42rem;
+  max-width: 52.93rem; }
+
 .card__text {
   position: relative;
   margin: 0 auto;
@@ -659,6 +665,9 @@ img {
   background-color: #E3B873;
   color: #fff;
   padding: 1.214rem 2.6rem; }
+
+.card__pricetag--design {
+  width: 16.285rem; }
 
 .modal {
   opacity: 0;
