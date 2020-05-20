@@ -776,6 +776,8 @@ img {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 570px) {
+  .section-title__word::after {
+    display: none; }
   .col-50 {
     margin-left: 0; }
     .col-50--dark {
