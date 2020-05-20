@@ -603,20 +603,20 @@ img {
   .swiper-pagination-bullet-active {
     background-color: #fff; }
 
-.swiper:double-button-prev, .swiper:double-button-next {
+.swiper-button-prev, .swiper-button-next {
   bottom: 0;
   top: auto;
   background-size: 42px;
   width: 42px;
   height: 14px; }
-  .swiper:double-button-prev::after, .swiper:double-button-next::after {
+  .swiper-button-prev::after, .swiper-button-next::after {
     display: none; }
 
-.swiper:double-button-prev {
+.swiper-button-prev {
   margin-left: 0;
   background: url("../img/arrow-prev.svg") no-repeat center; }
 
-.swiper:double-button-next {
+.swiper-button-next {
   background: url("../img/arrow-next.svg") no-repeat center; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -740,6 +740,9 @@ img {
     align-items: center; }
   .types__card {
     margin-bottom: 5rem; }
+  .card__title {
+    white-space: nowrap;
+    overflow: hidden; }
   .card__text {
     margin: 0; } }
 
