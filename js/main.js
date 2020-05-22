@@ -45,5 +45,34 @@ $(document).ready(function () {
   
   new WOW().init();
 
+  // Form validation
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2
+      },  
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlegth: "Имя не короче двух букв"
+      }, 
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      }  
+    }
+    
+  });
+  // telephone mask
+  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7(___) __-__-___"});
 
 });
