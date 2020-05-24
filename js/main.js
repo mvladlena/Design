@@ -76,3 +76,59 @@ $(document).ready(function () {
   $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7(___) __-__-___"});
 
 });
+
+$('.control__form').validate({
+  errorClass: "invalid",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2
+    },  
+    userPhone: "required",
+    userPhone: {
+      required: true
+      
+    }
+  },
+  messages: {
+    userName: {
+      required: "Имя обязательно",
+      minlegth: "Имя не короче двух {2} букв"
+    }, 
+    userPhone: "Телефон обязателен",
+    userPhone: {
+      required: "Обязательно"
+     
+      
+    }  
+  }
+  
+});
+
+
+  // Form validation
+$('.footer__form').validate({
+  errorClass: "invalid",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2
+    },  
+    userPhone: "required",
+    userQuestion: {
+      required: true,
+      Question: true
+    }
+  },
+  messages: {
+    userName: {
+      required: "Имя обязательно",
+      minlegth: "Имя не короче двух букв"
+    }, 
+    userPhone: "Телефон обязателен",
+    userQuestion: {
+      required: "Напишите вопрос"      
+    }  
+  }
+ 
+});

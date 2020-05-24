@@ -388,6 +388,12 @@ label.invalid {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
+.footer__form label.invalid {
+  color: tomato; }
+
+.footer__form input.invalid {
+  border-bottom: 1px solid tomato; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -759,6 +765,9 @@ img {
 
 .design {
   padding: 30rem; }
+
+.space {
+  min-height: 20rem; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
