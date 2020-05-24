@@ -805,6 +805,30 @@ img {
     background-color: #131313;
     padding: 4.285rem 0;
     padding-top: 3rem; }
+  .footer__map {
+    margin-bottom: 4rem;
+    max-width: 75%;
+    margin: auto;
+    padding-bottom: 4rem; }
+  .footer__block-title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One' cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    color: #E3B873;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4rem;
+    max-width: 42rem; }
+  .footer__block-icons {
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
 
 .modal {
   opacity: 0;
@@ -812,6 +836,7 @@ img {
   position: fixed;
   z-index: 199;
   left: 0;
+  top: 0;
   bottom: 0;
   right: 0;
   width: 100%;
