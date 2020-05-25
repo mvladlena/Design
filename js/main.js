@@ -83,7 +83,8 @@ $('.control__form').validate({
     userName: {
       required: true,
       minlength: 2
-    },  
+    },
+      
     userPhone: "required",
     userPhone: {
       required: true
@@ -97,13 +98,13 @@ $('.control__form').validate({
     }, 
     userPhone: "Телефон обязателен",
     userPhone: {
-      required: "Обязательно"
-     
+      required: "Обязательно"   
+      
       
     }  
   }
-  
-});
+}); 
+ 
 
 
   // Form validation
